@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="@home" class="logo"> Jovelyn
+            <span>Valentos</span> </a>
+
+            <box-icon name='menu' id="menu-icon"></box-icon>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home </a> 
+                <a href="#about">About </a> 
+                <a href="#portfolio">Projects </a>
+                <a href="#contact">Contact </a> 
+            </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Jovelyn</span></h1>
+            <h3 class="text-animation">I'm a<span></span></h3>
+            <p>
+                Feel free to explore my work, learn more about my journey, and connect with me. My digital door is always open! I’m passionate about creating solutions that not only work seamlessly but also make a lasting impact. Let’s connect and collaborate to turn great ideas into reality!
+            </p>
+        
+        <div class= "social-icon">
+            <a href="https://web.facebook.com/jovelyn.valentos/"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="https://www.instagram.com/_ms.jovelyn/profilecard/?igsh=MWRieXY4bzVleHpudQ%3D%3D&fbclid=IwZXh0bgNhZW0CMTAAAR0kN6oe4-GDCcCWH93Ddt07yTah30Xz3GXW6Rm0USTRB5u09gbP5ddWFCk_aem_hhOQM-AdM3_TFqaGLTUwiw"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/LuckyVyl"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <div class="btn-group">
+            <a href="#contact"
+            class="btn">Contact</a>
+        </div>
+    </div>
+        <div class="home-img">
+            <img src="2.jpg" alt="">
+        </div>
+    </section>
+    <div id="about">
+        <di class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="1.jpg" alt="" width="250" height="300">
+
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>I enjoy editing pictures, including creating graphics, and I’m also passionate about designing and refining front-end interfaces.<br> I love exploring the world of web design and web development, constantly learning and improving my skills in both areas. <br>Whether it's experimenting with creative visuals or building functional and engaging websites, I find joy in every step of the process. My goal is to combine creativity and technical expertise to deliver designs and solutions that leave a lasting impact.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Photograph</span><br>Exploring the art of photography </li>
+                            <li><span>Graphic Designer</span><br>Manipulate</li>
+                            <li><span>Web</span><br>Currently studying</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Exploring the editing</li>
+                            <li><span>2023-2024</span><br>Development</li>
+                            <li><span>2024</span><br>Still in the Development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015-2016</span><br>With Honor</li>
+                            <li><span>2019-2020</span><br>With Honor</li>
+                            <li><span>2024</span><br>Bachelor Of Science <br>in Information Technology</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading"><span>Projects</span></h2>
+   
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="6.jpg" alt="" width="200" height="200">
+                <div class="portfolio-layer">
+                    <h4>Graphic Design</h4>
+                    <p>Take a look at my development in the realm of graphic design.</p>
+                    <a href="https://github.com/LuckyVyl/Graphics-Output/tree/76540c3f45d5c5faf87a3400b34583e8d6384d37/Graphics"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box">
+                <img src="7.jpg" alt="" width="200" height="200">
+                <div class="portfolio-layer">
+                    <h4>Photography</h4>
+                    <p>Explore my development in the art of photography.</p>
+                    <a href="https://drive.google.com/drive/folders/1-i-1E5dV7CLDhPAZrXWz93nKz8jxHVFl?usp=drive_link"><i class='bx bx-link'></i></i></a>
+                </div>
+            </div>
+    
+            <div class="portfolio-box">
+                <img src="8.jpg" alt="" width="200" height="200">
+                <div class="portfolio-layer">
+                    <h4>Front-end Output</h4>
+                    <p>Take a look at my front-end development</p>
+                    <a href="https://github.com/LuckyVyl/Layout/tree/091b7f7abb1febe464b6e357fc97e930dea83d1a/layout"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+    
+            <div class="portfolio-box">
+                <img src="9.jpg" alt="" width="200" height="200">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Reflect on my contributions to web development.</p>
+                    <a href="https://github.com/LuckyVyl/Activity/tree/054de89e11d316fc6832b20cb5e74acc8cec3cdb/Web"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="full_name" required>
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number" name="phone" required>
+                <input type="text" placeholder="Subject" name="subject" required> 
+            </div>
+            
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="message" class="message" style="display: none;"></div> <!-- Message placeholder -->
+    </section>
+    <script src="script.js"></script>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Jovelyn 0. Valentos|  ALL Rights Reserved.</p>
+        </div>
+    
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+</body>
+</html>
