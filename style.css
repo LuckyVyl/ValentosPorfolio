@@ -376,14 +376,14 @@ content: ' Photographer';
     box-shadow: 0 0 1rem var(--main-color);
     overflow: hidden;
     display: flex;
-    width: 90%; /* Ensure it takes full width of the column */
+    width: 90%; 
 }
 
 .portfolio-box img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    aspect-ratio: 1; /* Makes the image square */
-    object-fit: cover; /* Ensures the image covers the square without distortion */
+    height: auto; 
+    aspect-ratio: 1; 
+    object-fit: cover; 
     transition: .5s ease-in-out;
 }
 .portfolio-box img:hover{
@@ -438,9 +438,9 @@ content: ' Photographer';
     margin-top: 1rem;
     padding: 1rem;
     font-size: 15px;
-    color: white; /* Dark green */
+    color: white;
     border-radius: 5px;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 .contact h2{
     margin-bottom: 10rem;
@@ -488,7 +488,7 @@ content: ' Photographer';
 }
 
 .footer-text p {
-    font-size: 1.6rem; /* Adjust the font size as needed */
+    font-size: 1.6rem; 
     
 }
 
@@ -536,51 +536,58 @@ content: ' Photographer';
 
 @media (max-width: 768px) {
     html {
-        font-size: 55%; /* Reduce base font size for smaller screens */
+        font-size: 55%; 
     }
 
     .header {
-        padding: 2rem 5%; /* Adjust padding for smaller screens */
-        flex-direction: column; /* Stack items vertically */
+        padding: 2rem 5%; 
+        flex-direction: column; 
     }
-
     .navbar a {
-        font-size: 1.5rem; /* Reduce font size of navbar links */
-        margin-left: 2rem; /* Adjust margin */
+        font-size: 1.5rem; 
+        margin-left: 2rem; 
     }
 
     section {
-        padding: 5rem 5%; /* Reduce padding for sections */
+        padding: 5rem 5%; 
     }
-
+    .home-content {
+        text-align: center;
+        padding: 3rem 2%; 
+    }
     .home-content h1 {
-        font-size: 4rem; /* Smaller headline for mobile */
+        font-size: 4rem; 
     }
 
     .home-content h3 {
-        font-size: 2.5rem; /* Smaller subheadline */
+        font-size: 2.5rem;
     }
 
     .portfolio-container {
-        grid-template-columns: 1fr; /* Stack portfolio items */
+        grid-template-columns: 1fr; 
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
     }
-
     .about-col-1, .about-col-2 {
-        flex-basis: 100%; /* Stack columns in 'About' section */
-        text-align: center; /* Center text for better readability */
+        flex-basis: 100%; 
+        text-align: center; 
     }
 
     .contact form .input-box input {
-        width: 100%; /* Ensure full-width inputs */
-        margin-left: 0; /* Remove left margin for inputs */
+        width: 100%; 
+        margin-left: 0;
     }
 
     .footer {
-        flex-direction: column; /* Stack footer items */
-        align-items: center; /* Center footer content */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .footer-text p {
-        font-size: 1.4rem; /* Adjust footer text size */
+        font-size: 1.4rem;
     }
+}
 }
