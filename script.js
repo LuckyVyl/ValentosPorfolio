@@ -25,7 +25,7 @@ window.onscroll = () => {
 
     sections.forEach(sec => {
         let top = window.scrollY;
-        let offset = sec.offsetTop - 150; // Fix: Use offsetTop
+        let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
@@ -51,18 +51,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const messageDiv = document.getElementById('message');
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault();
 
-        // Display notification
+      
         messageDiv.textContent = "submitted successfully";
-        messageDiv.style.display = "block"; // Show the message
+        messageDiv.style.display = "block"; 
         
-        // Hide the message after 3 seconds (3000 milliseconds)
+       
         setTimeout(function () {
             messageDiv.style.display = "none";
         }, 2000);
 
-        // Optionally, you can reset the form after submission
+       
         form.reset();
     });
 });
